@@ -12,6 +12,7 @@ public class Calculator {
     int day = 30;
 
     LocalDate localDate1 = LocalDate.of(2021, 11, 30);
+    LocalDate localDate2 = LocalDate.now();
     LocalDate localDateNow = LocalDate.now();
 
     Period period = Period.between(localDate1, localDateNow);
@@ -23,5 +24,7 @@ public class Calculator {
     long weeksInYear = ChronoUnit.WEEKS.between(localDate1, localDateNow);
 
     long daysInYear = ChronoUnit.DAYS.between(localDate1, localDateNow);
+
+
 }
 
